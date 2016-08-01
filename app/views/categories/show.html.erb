@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>&#x1F34C;  <%= @category.name %> &#x1F34C; </h1>
+  <h2>&#x1F34C; All Banana Category Articles Below &#x1F34C; </h2>
+  <ul>
+    <%@articles.each do |article| %>
+      <a href="/articles/<%=article.id%>">&#x1F34C; <%= article.title %> &#x1F34C; </a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/articles/<%=article.id%>/edit">edit</a>
+      <%= button_to 'delete', {controller: :articles, :action => 'destroy', :id => article.id}, method: :delete%>
+      <br><br>
+      <% end %>
+</div>

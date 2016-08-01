@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+cats = []
+
+5.times { cats << Category.create!(name: Faker::Team.name) }
+
+100.times { Article.create!(category_id: rand(1..5), title: Faker::University.name, body: Faker::Hipster.paragraphs(2))}
