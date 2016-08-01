@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>&#x1F34C;  Welcome to Bananalist!!! &#x1F34C; </h1><br>
+
+  <h2>&#x1F34C; All Bananas Categories Below &#x1F34C; </h2>
+  <br><br><br><br>
+  <ul>
+    <%@categories.each do |category| %>
+      <a href="/categories/<%=category.id%>">&#x1F34C; <%= category.name %>&#x1F34C; </a><br><br>
+      <% end %>
+    </ul>
+</div>

@@ -1,0 +1,36 @@
+body{
+  background-image: image-url("banana.png");
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  font-family: 'Bangers', cursive;
+}
+
+
+h1{
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+
+}
+
+h2 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+
+}
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+
+
+}
+.links {
+  text-align: left;
+  font-family: 'Bangers', cursive;
+}
+
+a {
+  text-decoration: none;
+}
